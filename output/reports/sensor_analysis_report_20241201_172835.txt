@@ -1,0 +1,150 @@
+DRIVERLESS CAR SENSOR DATA ANALYSIS REPORT
+==================================================
+
+ROUTE INFORMATION:
+------------------------------
+Distance: 100 miles
+Duration: 90 minutes
+Number of Stops: 3
+Fixed Passengers: 2
+
+SENSOR CONFIGURATION:
+------------------------------
+Temperature:
+  - Number of Sensors: 100
+  - Data Unit: Percentage
+  - Double Calibration: False
+  - Frequency: second
+  - Bytes per reading: 8
+
+Humidity:
+  - Number of Sensors: 25
+  - Data Unit: Percentage
+  - Double Calibration: False
+  - Frequency: second
+  - Bytes per reading: 8
+
+Tire Pressure:
+  - Number of Sensors: 8
+  - Data Unit: Force per area
+  - Double Calibration: True
+  - Frequency: second
+  - Bytes per reading: 8
+
+Vibrations:
+  - Number of Sensors: 100
+  - Data Unit: Velocity
+  - Double Calibration: True
+  - Frequency: millisecond
+  - Bytes per reading: 4
+
+Torque:
+  - Number of Sensors: 100
+  - Data Unit: Force per area
+  - Double Calibration: True
+  - Frequency: millisecond
+  - Bytes per reading: 4
+
+Proximity:
+  - Number of Sensors: 20
+  - Data Unit: Proximity
+  - Double Calibration: True
+  - Frequency: millisecond
+  - Bytes per reading: 4
+
+GPS:
+  - Number of Sensors: 3
+  - Data Unit: Latitude, Longitude
+  - Double Calibration: False
+  - Frequency: second
+  - Bytes per reading: 8
+
+Bluetooth:
+  - Number of Sensors: 2
+  - Data Unit: Number of Devices
+  - Double Calibration: False
+  - Frequency: second
+  - Bytes per reading: 4
+
+Brake Sensors:
+  - Number of Sensors: 6
+  - Data Unit: Break devices rotations
+  - Double Calibration: True
+  - Frequency: second
+  - Bytes per reading: 8
+
+10-MINUTE PERIOD ANALYSIS:
+------------------------------
+Temperature (100 sensors):
+  - Data: 0.46 MB
+  - Unit: Percentage
+Humidity (25 sensors):
+  - Data: 0.11 MB
+  - Unit: Percentage
+Tire Pressure (8 sensors):
+  - Data: 0.07 MB
+  - Unit: Force per area
+Vibrations (100 sensors):
+  - Data: 457.76 MB
+  - Unit: Velocity
+Torque (100 sensors):
+  - Data: 457.76 MB
+  - Unit: Force per area
+Proximity (20 sensors):
+  - Data: 91.55 MB
+  - Unit: Proximity
+GPS (3 sensors):
+  - Data: 0.01 MB
+  - Unit: Latitude, Longitude
+Bluetooth (2 sensors):
+  - Data: 0.00 MB
+  - Unit: Number of Devices
+Brake Sensors (6 sensors):
+  - Data: 0.05 MB
+  - Unit: Break devices rotations
+
+Total 10-minute data: 1007.80 MB
+
+FULL ROUTE ANALYSIS (90 minutes):
+------------------------------
+Temperature (100 sensors):
+  - Data: 4.12 MB (0.00 GB)
+  - Unit: Percentage
+Humidity (25 sensors):
+  - Data: 1.03 MB (0.00 GB)
+  - Unit: Percentage
+Tire Pressure (8 sensors):
+  - Data: 0.66 MB (0.00 GB)
+  - Unit: Force per area
+Vibrations (100 sensors):
+  - Data: 4119.87 MB (4.02 GB)
+  - Unit: Velocity
+Torque (100 sensors):
+  - Data: 4119.87 MB (4.02 GB)
+  - Unit: Force per area
+Proximity (20 sensors):
+  - Data: 823.97 MB (0.80 GB)
+  - Unit: Proximity
+GPS (3 sensors):
+  - Data: 0.12 MB (0.00 GB)
+  - Unit: Latitude, Longitude
+Bluetooth (2 sensors):
+  - Data: 0.04 MB (0.00 GB)
+  - Unit: Number of Devices
+Brake Sensors (6 sensors):
+  - Data: 0.49 MB (0.00 GB)
+  - Unit: Break devices rotations
+
+Total route data: 8.86 GB
+
+TECHNICAL REQUIREMENTS:
+------------------------------
+Latency Requirements:
+- Millisecond sensors: <1ms processing time
+- Second-frequency sensors: <1s processing time
+- Double calibration overhead considered
+
+Throughput Requirements:
+- Raw data rate: 1719.98 KB/second
+- With overhead: 2579.96 KB/second
+- Network speed: 134.37 Mbps
